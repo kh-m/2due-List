@@ -4,3 +4,8 @@
     text-align: center;
     border: 3px solid black;
 }
+
+.completed {
+    color: gray;
+    text-decoration: line-through;
+}
