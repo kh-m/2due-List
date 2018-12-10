@@ -19,6 +19,11 @@ $("input[type='text']").keypress(function (e) {
         //empties input field
         $(this).val("");
         //creates a new li and adds todoText to it
-        $('ul').append('<li><span><i class="far fa-trash-alt"></i></span> ' + todoText + '</li>');
+        $('ul').append('<li><span class="deleted"><i class="fas fa-bomb"></i></span> ' + todoText + '</li>');
     }
+});
+
+// Toggles input field
+$(".fa-plus-square").click(function() {
+    $("input[type='text']").fadeToggle();
 });
