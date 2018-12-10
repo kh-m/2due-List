@@ -1,8 +1,73 @@
+h1 {
+    background: darkgrey;
+    color: white;
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 3em;
+    font-weight: normal;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
 #container {
     width: 400px;
-    margin: 0 auto;
-    text-align: center;
-    border: 3px solid black;
+    margin: 100px auto;
+    background: lightyellow;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    font-family: Roboto;
+    font-weight: 300;
+}
+
+input {
+    font-size: 1.5em;
+    background: lightsalmon;
+    width: 100%;
+    padding: 8px 8px 8px  12px;
+    box-sizing: border-box;
+}
+
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: lightyellow;
+    font-style: italic;
+    font-size: 0.7em;
+}
+input::-moz-placeholder { /* Firefox 19+ */
+    color: green;
+    font-style: italic;
+    font-size: 0.7em;
+}
+  input:-ms-input-placeholder { /* IE 10+ */
+    color: yellow;
+    font-style: italic;
+    font-size: 0.7em;
+}
+  input:-moz-placeholder { /* Firefox 18- */
+    color: pink;
+    font-style: italic;
+    font-size: 0.7em;
+}
+
+input:focus {
+    background: white;
+    border: 3px solid blue;
+    outline: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    background: #fff;
+    height: 30px;
+    line-height: 30px;
+}
+
+li:nth-last-child(2n) {
+    background: #f7f7f7;
 }
 
 .completed {
