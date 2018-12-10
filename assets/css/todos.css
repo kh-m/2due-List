@@ -32,6 +32,7 @@ input {
     width: 100%;
     padding: 8px 8px 8px  12px;
     box-sizing: border-box;
+    border: 3px solid rgba(0, 0, 0, 0);
 }
 
 input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -50,7 +51,7 @@ input::-moz-placeholder { /* Firefox 19+ */
     font-size: 0.7em;
 }
   input:-moz-placeholder { /* Firefox 18- */
-        color: pink;
+    color: pink;
     font-style: italic;
     font-size: 0.7em;
 }
@@ -80,4 +81,22 @@ li:nth-last-child(2n) {
 .completed {
     color: gray;
     text-decoration: line-through;
+}
+
+span {
+    background: #e74c3c;
+    height: 30px;
+    margin-right: 5px;
+    text-align: center;
+    color: white;
+    width: 0;
+    display: inline-block;
+    transition:  0.15s linear;
+    opacity: 0;
+}
+
+li:hover span {
+    width: 30px;
+    height: auto;
+    opacity: 1;
 }
